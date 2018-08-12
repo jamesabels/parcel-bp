@@ -1,0 +1,23 @@
+{
+  "name": "parcel-bp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 3000",
+    "build": "npm install && parcel build src/index.html",
+    "clean": "rm -r .cache/ && rm -R ./dist rm -R node_modules"
+  },
+  "author": "James Abels",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "cssnano": "^4.0.5",
+    "node-sass": "^4.9.3",
+    "postcss-modules": "^1.3.2",
+    "typescript": "^3.0.1"
+  }
+}

@@ -1,0 +1,34 @@
+/* custom properties */
+$mainColor: lightcoral;
+$secondaryColor: lightblue;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $mainColor;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.sidebar {
+    background-color: $mainColor;
+    height: 100vh;
+}
+
+.main {
+    background-color: $secondaryColor;
+    height: 100vh;
+}
+
+.img {
+    opacity: 0.9;
+    background-image: url('assets/img/logo.png');
+    background-size: 40%;
+    background-repeat:no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}  
