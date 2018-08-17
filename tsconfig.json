@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": true,
+        "target": "es2015",
+        "isolatedModules": true
+    },
+    "exclude": [
+        "node_modules",
+        "e2e",
+        "**/*.spec.ts"    
+    ]
+}

@@ -2,6 +2,6 @@ import Hello from './classes/Hello';
 
 const hello = new Hello({message: 'World'});
 
-hello.print();
+console.log(hello.print('World!'));
 
-hello.printFromNS('Namespace');
+console.log(hello.printFromNS('Namespace'));

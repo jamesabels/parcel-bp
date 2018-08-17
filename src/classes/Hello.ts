@@ -9,11 +9,11 @@ export default class Hello {
     constructor (options: options) {
         this.message = options.message;
     }
-    print () {
-        console.log(`Hello ${this.message}!`);
+    print (message: String) {
+        return `Hello ${message}!`;
     }
     printFromNS (message: String) {
         HelloNS.setMessage(message);
-        console.log(`Hello ${HelloNS.data.message}!`);
+        return `Hello ${HelloNS.data.message}!`;
     }
 }
