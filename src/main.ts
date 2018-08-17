@@ -1,7 +1,11 @@
-import Hello from './classes/Hello';
+import Subject from './classes/patterns/Subject';
+import Observer from './classes/patterns/Observer';
 
-const hello = new Hello({message: 'World'});
+let weatherStation = new Subject();
 
-console.log(hello.print('World!'));
+let tempDisplay = new Observer(weatherStation);
 
-console.log(hello.printFromNS('Namespace'));
+weatherStation.setData(1);
+weatherStation.setData(2);
+weatherStation.setData(3);
+
