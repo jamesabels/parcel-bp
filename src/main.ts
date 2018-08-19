@@ -1,11 +1,9 @@
-import Subject from './classes/patterns/Subject';
-import Observer from './classes/patterns/Observer';
+import 'babel-polyfill';
+import UserBroker from './classes/brokers/UserBroker';
+import UserList from './classes/components/UserList';
 
-let weatherStation = new Subject();
+let broker = new UserBroker();
+let userlist = new UserList(broker);
 
-let tempDisplay = new Observer(weatherStation);
-
-weatherStation.setData(1);
-weatherStation.setData(2);
-weatherStation.setData(3);
+broker.getUsers();
 

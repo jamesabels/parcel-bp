@@ -2,7 +2,7 @@ namespace Global {
     export interface Subject {
         registerObserver(o: Observer);
         removeObserver(o: Observer);
-        notifyObservers();
+        notifyObservers(d: any);
     }
 
     export interface Observer {
