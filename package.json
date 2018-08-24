@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env parcel src/index.html -p 3000",
     "build": "npm install && cross-env parcel build src/index.html",
-    "test": "cross-env ./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/*.spec.ts",
+    "test": "cross-env ./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/**/*.spec.ts",
     "clean": "rm -r .cache/ && rm -R ./dist rm -R node_modules"
   },
   "pre-commit": [

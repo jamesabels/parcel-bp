@@ -1,0 +1,8 @@
+### GET ALL USERS
+GET https://jsonplaceholder.typicode.com/users
+
+### GET USERS POSTS 
+GET https://jsonplaceholder.typicode.com/posts?userId=1
+
+### GET USERS COMMENTS 
+GET https://jsonplaceholder.typicode.com/comments?userId=1
